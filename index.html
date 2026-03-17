@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GEM Marketing Digital | Agencia de META Ads & SEO en General Roca</title>
+    <meta name="description"
+        content="Agencia boutique en General Roca, Rio Negro. Escalamos tu negocio con estrategias de alto impacto en META Ads, SEO Técnico y Producción Visual Cinematográfica.">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0df2cc",
+                        "primary-dark": "#0bc2a3",
+                        "accent-orange": "#f97316",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#10221f",
+                        "surface-dark": "#132a26",
+                        "surface-darker": "#0b1816",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+        }
+        .glass-card {
+            background: rgba(19, 42, 38, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(13, 242, 204, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #0df2cc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(13, 242, 204, 0.3);
+        }
+        .heavy-overlay {
+            background: linear-gradient(to bottom, rgba(11, 24, 22, 0.92), rgba(11, 24, 22, 0.85), rgba(11, 24, 22, 0.95));
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #20ba5a;
+        }
+        /* Mobile Scroll Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.reveal-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Mobile Color Reveal */
+        .reveal img {
+            filter: grayscale(100%);
+            transition: filter 1.2s ease-out, transform 0.7s ease-out !important;
+        }
+        .reveal.reveal-active img {
+            filter: grayscale(0%);
+        }
+        /* Glow Cursor Effect */
+        #cursor-glow {
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(13, 242, 204, 0.08) 0%, rgba(13, 242, 204, 0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        @media (max-width: 768px) { #cursor-glow { display: none; } }
+    </style>
+    <!-- Local SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "GEM Marketing Digital",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDvoqx0CuahhTXKbeob2ITbpR02xys4M8BJvo3xkuErdrrg03uLmNhovy15lVuWIXkgh0lJlC985V9NgLvZ9HMyW0P0MBOxK2ZZuAVZtOjxbZB7_-HiLNaKwPV_pVbGWtsJ5ichwzigWZiKpJqTV9TqxkC1iJ0KzS3HGyAvz1fXOPWww325XE8L8EjyQpKq345PMhZUEdoTt7wWVhwKs-Tt2iBO-G8mEsinHevoZ1dOlBR448xEN_cw-J9P6LVO1zmOPJj1rEMC6C8d",
+      "@id": "",
+      "url": "https://gem-marketing.netlify.app",
+      "telephone": "+549000000000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "General Roca",
+        "addressLocality": "General Roca",
+        "addressRegion": "Rio Negro",
+        "postalCode": "8332",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -39.0268,
+        "longitude": -67.5756
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/gemmarketing"
+      ]
+    }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased selection:bg-primary selection:text-background-dark">
+    <div id="cursor-glow"></div>
+    <nav
+        class="fixed w-full z-50 transition-all duration-300 top-0 border-b border-white/5 bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="material-icons text-primary text-3xl">diamond</span>
+                    <span class="font-display font-bold text-2xl text-white tracking-tighter">GEM Marketing Digital
+                        2026</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            href="#servicios">Servicios</a>
+                        <a class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            href="#proceso">Estrategia</a>
+                        <a class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            href="#resultados">Resultados</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a class="border border-primary/30 text-primary hover:bg-primary/10 px-6 py-2 rounded-full text-sm font-medium transition-all duration-300"
+                        href="#contacto">
+                        Hablemos de tu proyecto
+                    </a>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-white/10 focus:outline-none transition-all duration-300"
+                        type="button">
+                        <span class="sr-only">Open main menu</span>
+                        <span class="material-icons" id="menu-icon">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface-dark border-t border-white/5 absolute w-full left-0 top-20 shadow-2xl overflow-hidden transition-all duration-300">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#servicios" class="block text-gray-300 hover:text-primary px-3 py-3 rounded-md text-base font-medium border-b border-white/5">Servicios</a>
+                <a href="#proceso" class="block text-gray-300 hover:text-primary px-3 py-3 rounded-md text-base font-medium border-b border-white/5">Estrategia</a>
+                <a href="#resultados" class="block text-gray-300 hover:text-primary px-3 py-3 rounded-md text-base font-medium border-b border-white/5">Resultados</a>
+                <div class="pt-4">
+                    <a href="#contacto" class="block w-full text-center bg-primary text-background-dark py-3 rounded-full font-bold">Hablemos de tu proyecto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img alt="High-end digital growth workspace" class="w-full h-full object-cover grayscale brightness-[0.4]"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvoqx0CuahhTXKbeob2ITbpR02xys4M8BJvo3xkuErdrrg03uLmNhovy15lVuWIXkgh0lJlC985V9NgLvZ9HMyW0P0MBOxK2ZZuAVZtOjxbZB7_-HiLNaKwPV_pVbGWtsJ5ichwzigWZiKpJqTV9TqxkC1iJ0KzS3HGyAvz1fXOPWww325XE8L8EjyQpKq345PMhZUEdoTt7wWVhwKs-Tt2iBO-G8mEsinHevoZ1dOlBR448xEN_cw-J9P6LVO1zmOPJj1rEMC6C8d" />
+            <div class="absolute inset-0 heavy-overlay"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm">
+                <span class="flex h-2 w-2 relative">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                </span>
+                <span class="text-xs font-semibold tracking-wide text-gray-300 uppercase">Marketing Digital
+                    Certificado</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-display font-extrabold text-white tracking-tight mb-6 leading-tight">
+                Hagamos que tu negocio crezca, <br class="hidden md:block" />
+                <span class="text-gradient">sin vueltas ni complicaciones.</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400 font-light leading-relaxed">
+                Si tenés un negocio en el <span class="text-white font-medium">Alto Valle</span>, queremos darte una mano para que escales de verdad con estrategias que funcionan.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a class="bg-primary hover:bg-primary-dark text-background-dark font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 glow-effect transform hover:-translate-y-1"
+                    href="#contacto">
+                    Empecemos a trabajar juntos
+                </a>
+                <a class="border border-white/20 hover:bg-white/5 text-white py-4 px-8 rounded-full text-lg font-medium transition-all duration-300"
+                    href="#servicios">
+                    Mirá cómo te ayudamos
+                </a>
+            </div>
+            <div
+                class="mt-16 pt-8 border-t border-white/5 grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-4 items-center opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="flex justify-center items-center gap-2">
+                    <span class="material-icons text-3xl">storefront</span>
+                    <span class="font-bold text-xl text-white">Shopify Plus</span>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                    <span class="material-icons text-3xl">public</span>
+                    <span class="font-bold text-xl text-white">Meta Partner</span>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                    <span class="material-icons text-3xl">analytics</span>
+                    <span class="font-bold text-xl text-white">Google Ads</span>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                    <span class="material-icons text-3xl">verified</span>
+                    <span class="font-bold text-xl text-white">Semrush</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 relative bg-surface-darker" id="servicios">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">¿Cómo vamos a ayudarte a crecer?</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">No hay magia, hay trabajo y estrategia. Estas son las herramientas que usamos para potenciar tu marca.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                <div
+                    class="glass-card rounded-2xl overflow-hidden border-primary/10 hover:border-primary/50 transition-all duration-500 group relative reveal">
+                    <div class="h-56 w-full relative overflow-hidden">
+                        <img alt="Professional digital growth workspace"
+                            class="w-full h-full object-cover brightness-50 group-hover:scale-105 group-hover:brightness-90 transition-all duration-700"
+                            loading="lazy"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHUFLpb87mgD1Z5BC8aE6tbIudkn1iQgxGRHwZXAmzMMAfg_ZY3j_0IhyQccMK4sFtMU2Fk8wBAt5hrUS55PrSYTbiSWtHwKo6oyc2oZmh83lQKFUkbFBpFtCpWhxGwMAgdiBtZt7NLnV7_WaBHErFyVj-nQvbzHUdfBaOyW5Vpwg1-8yQJcPwO8E43aBgo5x4IXLRgWwiSLA5h3-A0WMCwJRdkLr2GghTn5r-Shzi3nQ-nx02z0Ybwg1GlXftAJ8uF1IUlf1UXhoM" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-surface-darker via-surface-darker/20 to-transparent">
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-4">META Ads</h3>
+                        <p class="text-primary font-medium mb-6 uppercase tracking-wider text-sm">Hacete notar donde están todos</p>
+                        <p class="text-gray-400 mb-8 leading-relaxed text-sm">
+                            Creamos anuncios en Facebook e Instagram que la gente no quiere ignorar. Menos ruido, más ventas reales para tu negocio.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-300 text-xs">
+                                <span class="material-icons text-primary text-[10px] mr-2">check_circle</span>
+                                Estrategias Full-Funnel
+                            </li>
+                            <li class="flex items-center text-gray-300 text-xs">
+                                <span class="material-icons text-primary text-[10px] mr-2">check_circle</span>
+                                Optimización de ROAS
+                            </li>
+                        </ul>
+                        <a class="inline-flex items-center text-white hover:text-primary transition-colors font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm"
+                            href="#">
+                            Saber más <span class="material-icons ml-1 text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="glass-card rounded-2xl overflow-hidden border-primary/10 hover:border-primary/50 transition-all duration-500 group relative reveal">
+                    <div class="h-56 w-full relative overflow-hidden">
+                        <img alt="Cinematic photograph of advanced SEO data analytics"
+                            class="w-full h-full object-cover brightness-50 group-hover:scale-105 group-hover:brightness-90 transition-all duration-700"
+                            loading="lazy"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbhX8IneCeOKrEXlNpyK3PJEQ9t7Mvw4l-Mdfg1IHEGz6hzmXGSYG38exxfevRIJoAy-smWwuGvU5NuOJ_2BceOedrINj0ESxF_DlZdo-QNpnCh-KfQuuDndTZn5J9zW6zqqeSjTzbSW_K_29k2kNEQuhmCcuQKkYJ7tW5B-JeFbrKhMUyixvqQGKC9k2UJIBD858w0HcjAmP0-fCvjPm0r7LZKSKUTegJKfj9tACL_nzsQBmBXSR8BD8gE8kLT8hImHN5_vtyYXwe" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-surface-darker via-surface-darker/20 to-transparent">
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-4">SEO que funciona</h3>
+                        <p class="text-primary font-medium mb-6 uppercase tracking-wider text-sm">Que te encuentren cuando te busquen</p>
+                        <p class="text-gray-400 mb-8 leading-relaxed text-sm">
+                            Hacemos que tu sitio sea el que Google prefiere mostrar. Para que cuando alguien necesite lo que ofrecés, el primero en aparecer seas vos.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-300 text-xs">
+                                <span class="material-icons text-primary text-[10px] mr-2">check_circle</span>
+                                Auditoría Técnica SEO
+                            </li>
+                            <li class="flex items-center text-gray-300 text-xs">
+                                <span class="material-icons text-primary text-[10px] mr-2">check_circle</span>
+                                Link Building Premium
+                            </li>
+                        </ul>
+                        <a class="inline-flex items-center text-white hover:text-primary transition-colors font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm"
+                            href="#">
+                            Saber más <span class="material-icons ml-1 text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="glass-card rounded-2xl overflow-hidden border-accent-orange/10 hover:border-accent-orange/50 transition-all duration-500 group relative reveal">
+                    <div class="h-56 w-full relative overflow-hidden">
+                        <img alt="Professional Camera Setup"
+                            class="w-full h-full object-cover brightness-50 group-hover:scale-105 group-hover:brightness-90 transition-all duration-700"
+                            loading="lazy"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpg-kyjc-e6bRO9lCvQSNHnJO8nliVVBLxABH7unypvQ-HwCoLX96rTySCKCAfBj_1HIafnngLJM82Y2xgaTst_KGOrrGuVipWGiOPUe36r6XA77vS-bn3vrLuUonfPOeHIra8dlxDjFCvahjsKDxu15UN7peOWfX4WoVZHLXUVRBhUoXnkkELngwjDfOIFpGBJRvdCmTIuGHbhpaviNahS6n2dtsACRJ0qknbxa6Utim9K2qRaKbCunHOGZtJbcIiKh7HV1DrmvAo" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-surface-darker via-surface-darker/20 to-transparent">
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-4">Producción Visual</h3>
+                        <p class="text-accent-orange font-medium mb-6 uppercase tracking-wider text-sm">Imágenes que venden</p>
+                        <p class="text-gray-400 mb-8 leading-relaxed text-sm">
+                            Hacemos fotos y videos que captan la atención de inmediato. Si se ve bien y transmite confianza, es mucho más fácil vender.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-300 text-xs">
+                                <span class="material-icons text-accent-orange text-[10px] mr-2">check_circle</span>
+                                High-Perf Ads Assets
+                            </li>
+                        </ul>
+                        <a class="inline-flex items-center text-white hover:text-accent-orange transition-colors font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm"
+                            href="#">
+                            Saber más <span class="material-icons ml-1 text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="glass-card rounded-2xl overflow-hidden border-primary/10 hover:border-primary/50 transition-all duration-500 group relative reveal">
+                    <div class="h-56 w-full relative overflow-hidden">
+                        <img alt="Modern website interface"
+                            class="w-full h-full object-cover brightness-50 group-hover:scale-105 group-hover:brightness-90 transition-all duration-700"
+                            loading="lazy"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFD40ohuYegqS8lst_72Vok1KbdTVsb7fTWfOO1gvgPAPpDLoct_qY-myBAAS6v1NpnteZqRwb68tJD_aSRADCWRsTvkZ-eCbhd6jtlkXQlmqd2-l5CZs6lH4BDdHphhR6_FkW54xHnu6tAYdG9GV6EZMa7YH4ZMdHAvd5LPlnShJ062Jta8KFn5IAnj2n25HZnpXCNC7xM8jp3ZmkFtkGSpMO5G6g8u6OCiKkfRCk10mg9JcVoh32b0jAajh0oQlDVo64Cddw5Gvn" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-surface-darker via-surface-darker/20 to-transparent">
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-4">Sitios Web</h3>
+                        <p class="text-primary font-medium mb-6 uppercase tracking-wider text-sm">Performance & Diseño
+                        </p>
+                        <p class="text-gray-400 mb-8 leading-relaxed text-sm">
+                            Desarrollo de landing pages y sitios corporativos optimizados para convertir visitantes en
+                            clientes.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-300 text-xs">
+                                <span class="material-icons text-primary text-[10px] mr-2">check_circle</span>
+                                UI/UX de Alta Conversión
+                            </li>
+                            <li class="flex items-center text-gray-300 text-xs">
+                                <span class="material-icons text-primary text-[10px] mr-2">check_circle</span>
+                                Carga Ultra-Rápida
+                            </li>
+                        </ul>
+                        <a class="inline-flex items-center text-white hover:text-primary transition-colors font-medium group-hover:translate-x-2 transition-transform duration-300 text-sm"
+                            href="#">
+                            Saber más <span class="material-icons ml-1 text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-background-dark overflow-hidden" id="proceso">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2">
+                    <div
+                        class="inline-block px-4 py-1 rounded-full border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
+                        Boutique Agency Approach</div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">Cómo trabajamos <br />codo a codo con vos</h2>
+                    <p class="text-gray-400 text-lg mb-10 leading-relaxed">
+                        Olvidate de las agencias que te ven como un número más en un Excel. Acá nos sentamos con vos, entendemos qué necesitás y nos enfocamos en que tu inversión se transforme en resultados reales, cuidando tu negocio como si fuera el nuestro.
+                    </p>
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white font-bold text-xl">
+                                01</div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-2">Inmersión Creativa</h4>
+                                <p class="text-gray-500 text-sm">Entendemos tu marca desde adentro para proyectarla
+                                    hacia afuera con autenticidad.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white font-bold text-xl">
+                                02</div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-2">Iteración de Alto Impacto</h4>
+                                <p class="text-gray-500 text-sm">Pruebas constantes y refinamiento de activos visuales
+                                    basados en performance real.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="space-y-4 pt-12">
+                        <div class="rounded-2xl overflow-hidden glass-card p-1">
+                            <img alt="Team collaborating in creative studio"
+                                class="w-full aspect-[4/5] object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbhX8IneCeOKrEXlNpyK3PJEQ9t7Mvw4l-Mdfg1IHEGz6hzmXGSYG38exxfevRIJoAy-smWwuGvU5NuOJ_2BceOedrINj0ESxF_DlZdo-QNpnCh-KfQuuDndTZn5J9zW6zqqeSjTzbSW_K_29k2kNEQuhmCcuQKkYJ7tW5B-JeFbrKhMUyixvqQGKC9k2UJIBD858w0HcjAmP0-fCvjPm0r7LZKSKUTegJKfj9tACL_nzsQBmBXSR8BD8gE8kLT8hImHN5_vtyYXwe" />
+                        </div>
+                        <div class="rounded-2xl overflow-hidden glass-card p-1">
+                            <img alt="Designer working on high-end visual asset"
+                                class="w-full aspect-square object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFD40ohuYegqS8lst_72Vok1KbdTVsb7fTWfOO1gvgPAPpDLoct_qY-myBAAS6v1NpnteZqRwb68tJD_aSRADCWRsTvkZ-eCbhd6jtlkXQlmqd2-l5CZs6lH4BDdHphhR6_FkW54xHnu6tAYdG9GV6EZMa7YH4ZMdHAvd5LPlnShJ062Jta8KFn5IAnj2n25HZnpXCNC7xM8jp3ZmkFtkGSpMO5G6g8u6OCiKkfRCk10mg9JcVoh32b0jAajh0oQlDVo64Cddw5Gvn" />
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="rounded-2xl overflow-hidden glass-card p-1">
+                            <img alt="Creative workspace environment"
+                                class="w-full aspect-square object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHUFLpb87mgD1Z5BC8aE6tbIudkn1iQgxGRHwZXAmzMMAfg_ZY3j_0IhyQccMK4sFtMU2Fk8wBAt5hrUS55PrSYTbiSWtHwKo6oyc2oZmh83lQKFUkbFBpFtCpWhxGwMAgdiBtZt7NLnV7_WaBHErFyVj-nQvbzHUdfBaOyW5Vpwg1-8yQJcPwO8E43aBgo5x4IXLRgWwiSLA5h3-A0WMCwJRdkLr2GghTn5r-Shzi3nQ-nx02z0Ybwg1GlXftAJ8uF1IUlf1UXhoM" />
+                        </div>
+                        <div class="rounded-2xl overflow-hidden glass-card p-1">
+                            <img alt="Modern studio lighting and gear"
+                                class="w-full aspect-[4/5] object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiiG6clw6A33Zcqtb8mDrdtmG-6faDTECQOEgiEhzRd5Vc-qDIRygzMm76zbXG-ZWsYebG8j9IFlZktEt3zaogHgRjgsuHrNs9UtGF04X_4nAZhJNcVu8jtvPUX_KGvKNhuOV5Nb6ofiJpx2rQufAUwBjsWiw4fHlSJai2vhw27P2hbephUec9cx7c_7ADCS36MZIitZVZpRdXLJqfP2TO7lbUGMjWL7rTteKirY3ecoMhe1GsyyNH2nAsF28Z8CfbHgcVqjgY_nfa" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 relative overflow-hidden" id="resultados">
+        <div class="absolute inset-0 bg-background-dark/95 z-0">
+            <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent opacity-80">
+            </div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Resultados que hablan por sí mismos</h2>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                        No vendemos humo, vendemos crecimiento. Nuestros clientes ven un impacto directo en su
+                        facturación gracias a nuestra metodología basada en datos.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                            <div class="text-4xl font-bold text-primary mb-1 counter" data-target="300">+0%</div>
+                            <div class="text-sm text-gray-400 font-medium uppercase tracking-wide">ROI Promedio</div>
+                        </div>
+                        <div class="p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                            <div class="text-4xl font-bold text-white mb-1 counter" data-target="40">-0%</div>
+                            <div class="text-sm text-gray-400 font-medium uppercase tracking-wide">Costo por Lead</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="glass-card rounded-2xl p-8 border-t-4 border-t-primary shadow-2xl">
+                        <div class="flex items-center justify-between mb-8">
+                            <div>
+                                <h4 class="text-white font-semibold">Crecimiento de Leads (Q3)</h4>
+                                <p class="text-xs text-gray-500">Últimos 90 días</p>
+                            </div>
+                            <div class="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold">+124.5%
+                            </div>
+                        </div>
+                        <div class="h-64 w-full flex items-end justify-between space-x-2">
+                            <div
+                                class="w-1/6 bg-white/10 rounded-t-sm h-[30%] hover:bg-primary/40 transition-colors cursor-pointer group relative">
+                            </div>
+                            <div
+                                class="w-1/6 bg-white/10 rounded-t-sm h-[45%] hover:bg-primary/50 transition-colors cursor-pointer group relative">
+                            </div>
+                            <div
+                                class="w-1/6 bg-white/10 rounded-t-sm h-[40%] hover:bg-primary/60 transition-colors cursor-pointer group relative">
+                            </div>
+                            <div
+                                class="w-1/6 bg-white/10 rounded-t-sm h-[65%] hover:bg-primary/70 transition-colors cursor-pointer group relative">
+                            </div>
+                            <div
+                                class="w-1/6 bg-white/10 rounded-t-sm h-[85%] hover:bg-primary/80 transition-colors cursor-pointer group relative">
+                            </div>
+                            <div
+                                class="w-1/6 bg-gradient-to-t from-primary/50 to-primary rounded-t-sm h-[100%] shadow-[0_0_20px_rgba(13,242,204,0.4)] relative group cursor-pointer">
+                            </div>
+                        </div>
+                        <div class="mt-4 flex justify-between text-xs text-gray-500 font-mono">
+                            <span>JUL</span>
+                            <span>AGO</span>
+                            <span>SEP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="py-24 bg-surface-darker/50" id="faqs">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Charlemos un toque (sin vueltas)</h2>
+                <p class="text-gray-400">Sabemos que tenés dudas. Acá te las respondemos como se las responderíamos a un amigo.</p>
+            </div>
+            <div class="space-y-4">
+                <details class="group glass-card rounded-2xl p-6 cursor-pointer overflow-hidden transition-all duration-300">
+                    <summary class="flex justify-between items-center font-bold text-white list-none">
+                        <span>¿Cuánto tengo que poner para ver resultados?</span>
+                        <span class="material-icons group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+                        Mirá, no hay un número mágico, pero siempre recomendamos empezar con algo que te permita "testear" sin que te quite el sueño. Charlamos tu caso, vemos tu margen y armamos un plan real. La idea es que la inversión se pague sola con las ventas que traiga.
+                    </p>
+                </details>
+                <details class="group glass-card rounded-2xl p-6 cursor-pointer overflow-hidden transition-all duration-300">
+                    <summary class="flex justify-between items-center font-bold text-white list-none">
+                        <span>¿Por qué debería elegirte a vos y no hacerlo yo solo?</span>
+                        <span class="material-icons group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+                        Poder, podés. Pero lo más probable es que quemes guita probando cosas que nosotros ya sabemos que no funcionan. Zapatero a su zapato: vos ocupate de que tu negocio sea el mejor de la zona, y nosotros nos ocupamos de que a la gente le aparezca tu marca hasta en la sopa.
+                    </p>
+                </details>
+                <details class="group glass-card rounded-2xl p-6 cursor-pointer overflow-hidden transition-all duration-300">
+                    <summary class="flex justify-between items-center font-bold text-white list-none">
+                        <span>¿En cuánto tiempo voy a empezar a vender más?</span>
+                        <span class="material-icons group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+                        Normalmente, las primeras semanas son de ajuste. Al primer mes ya deberías notar que el teléfono suena más seguido. A los 90 días, si el trabajo es parejo de ambos lados, el cambio es rotundo.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-surface-darker relative" id="contacto">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass-card rounded-3xl p-8 md:p-12 border border-white/5 overflow-hidden relative">
+                <div
+                    class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none">
+                </div>
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-white mb-4">¿Te damos una mano con tu negocio?</h2>
+                    <p class="text-gray-400">Contanos qué tenés en mente y vemos cómo podemos ayudarte. Sin presión, solo una charla honesta sobre tus objetivos.</p>
+                </div>
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="relative group">
+                            <input
+                                class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors invalid:border-red-500"
+                                id="name" placeholder=" " required="" type="text" />
+                            <label
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-invalid:text-red-500"
+                                for="name">Nombre Completo</label>
+                        </div>
+                        <div class="relative group">
+                            <input
+                                class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors invalid:border-red-500"
+                                id="email" placeholder=" " required="" type="email" />
+                            <label
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-invalid:text-red-500"
+                                for="email">Correo Electrónico</label>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="relative group">
+                            <input
+                                class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors"
+                                id="website" placeholder=" " type="url" />
+                            <label
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                for="website">Sitio Web (Opcional)</label>
+                        </div>
+                        <div class="relative group">
+                            <select
+                                class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors"
+                                id="service">
+                                <option class="text-black" disabled="" selected="" value="">Servicio de Interés</option>
+                                <option class="text-black" value="meta">META Ads</option>
+                                <option class="text-black" value="seo">SEO Técnico</option>
+                                <option class="text-black" value="web">Sitios Web</option>
+                                <option class="text-black" value="visual">Producción Visual</option>
+                                <option class="text-black" value="both">Estrategia Integral</option>
+                            </select>
+                            <label class="sr-only" for="service">Servicio</label>
+                        </div>
+                    </div>
+                    <div class="relative group pt-4">
+                        <textarea
+                            class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors resize-none"
+                            id="message" placeholder=" " rows="3"></textarea>
+                        <label
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-7 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                            for="message">Cuéntanos sobre tus objetivos</label>
+                    </div>
+                    <div class="pt-6 text-center">
+                        <button
+                            id="submit-button"
+                            class="w-full md:w-auto bg-primary hover:bg-primary-dark text-background-dark font-bold py-4 px-12 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-primary/50 flex items-center justify-center gap-2"
+                            type="submit">
+                            <span id="button-text">Hablemos hoy mismo</span>
+                            <span id="button-loader" class="hidden animate-spin material-icons">sync</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-background-dark border-t border-white/10 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <span class="material-icons text-primary text-2xl">diamond</span>
+                        <span class="font-display font-bold text-xl text-white tracking-tighter">GEM Marketing Digital
+                            2026</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Agencia de Marketing Digital premium especializada en escalar negocios mediante estrategias de
+                        META Ads, SEO y Producción Visual.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Servicios</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">Meta Ads</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">SEO Técnico</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Sitios Web</a></li>
+                        <li><a class="hover:text-accent-orange transition-colors" href="#">Producción Visual</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Compañía</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">Sobre Nosotros</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Casos de Éxito</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary/20 transition-all"
+                            href="#">
+                            <span class="font-bold">in</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary/20 transition-all"
+                            href="#">
+                            <span class="font-bold">ig</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-600 text-sm text-center md:text-left mb-4 md:mb-0">
+                    © 2026 GEM Marketing Digital 2026. Todos los derechos reservados.
+                </p>
+                <div class="flex space-x-6 text-sm text-gray-600">
+                    <a class="hover:text-gray-400" href="#">Privacidad</a>
+                    <a class="hover:text-gray-400" href="#">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for Scroll Animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                threshold: 0.15,
+                rootMargin: '0px 0px -10% 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // Glow Cursor
+            const glow = document.getElementById('cursor-glow');
+            document.addEventListener('mousemove', (e) => {
+                glow.style.left = e.clientX + 'px';
+                glow.style.top = e.clientY + 'px';
+                glow.style.opacity = '1';
+            });
+
+            // Counters Logic
+            const counters = document.querySelectorAll('.counter');
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = +entry.target.getAttribute('data-target');
+                        let count = 0;
+                        const updateCount = () => {
+                            const speed = target / 40;
+                            if (count < target) {
+                                count += speed;
+                                entry.target.innerText = (target === 300 ? '+' : '-') + Math.ceil(count) + '%';
+                                setTimeout(updateCount, 20);
+                            } else {
+                                entry.target.innerText = (target === 300 ? '+' : '-') + target + '%';
+                            }
+                        };
+                        updateCount();
+                        counterObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            counters.forEach(c => counterObserver.observe(c));
+
+            // Form Loader Logic
+            const form = document.querySelector('form');
+            const submitBtn = document.getElementById('submit-button');
+            const btnText = document.getElementById('button-text');
+            const btnLoader = document.getElementById('button-loader');
+
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    btnText.innerText = 'Enviando...';
+                    btnLoader.classList.remove('hidden');
+                    submitBtn.disabled = true;
+                    // Simulate API call
+                    setTimeout(() => {
+                        btnText.innerText = '¡Enviado!';
+                        btnLoader.classList.add('hidden');
+                        form.reset();
+                        setTimeout(() => {
+                            btnText.innerText = 'Hablemos hoy mismo';
+                            submitBtn.disabled = false;
+                        }, 3000);
+                    }, 2000);
+                });
+            }
+
+            // Mobile Menu Toggle Logic
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    const isHidden = mobileMenu.classList.contains('hidden');
+                    if (isHidden) {
+                        mobileMenu.classList.remove('hidden');
+                        menuIcon.textContent = 'close';
+                    } else {
+                        mobileMenu.classList.add('hidden');
+                        menuIcon.textContent = 'menu';
+                    }
+                });
+
+                // Close menu on link click
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        menuIcon.textContent = 'menu';
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
