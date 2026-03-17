@@ -1,0 +1,10 @@
+{
+    "mcpServers": {
+        "nano-banana-pro": {
+            "command": "python",
+            "args": [
+                "c:/Users/Eze/Desktop/Proyecto-GEM/mcp-nano-banana/server.py"
+            ]
+        }
+    }
+}

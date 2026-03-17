@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Producción de Contenido - GEM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0df2cc;
+            --secondary: #0ea5e9;
+            --bg: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            line-height: 1.5;
+            background: #f8fafc;
+            padding: 40px 20px;
+        }
+
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        /* Border accent */
+        .page::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border-radius: 8px 8px 0 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2rem;
+            color: var(--text);
+            font-weight: 800;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .date {
+            text-align: right;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text);
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--text);
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+            list-style-position: inside;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .service-highlight {
+            background: #f1f5f9;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .price-box {
+            border: 2px solid var(--primary);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .price-amount {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-note {
+            margin-top: 60px;
+            font-size: 0.85rem;
+            color: var(--muted);
+            text-align: center;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        /* Print optimization */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .page {
+                box-shadow: none;
+                border: none;
+                padding: 40px;
+            }
+
+            .btn-print {
+                display: none;
+            }
+        }
+
+        .btn-print {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--text);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn-print" onclick="window.print()">Descargar PDF (Imprimir)</button>
+
+    <div class="page">
+        <header>
+            <div class="logo">GEM<span>.</span></div>
+            <div class="date">
+                Propuesta #001<br>
+                13 de Febrero, 2026
+            </div>
+        </header>
+
+        <h1>Producción de Contenido de Alto Impacto</h1>
+
+        <p>Esta propuesta detalla el servicio de producción visual estratégica para potenciar la presencia digital de su
+            marca y maximizar el rendimiento de sus campañas de marketing.</p>
+
+        <h2>¿Por qué Producción Profesional?</h2>
+        <p>En el mercado actual, la calidad visual no es un lujo, es una métrica de rendimiento. El contenido
+            profesional alineado con su estrategia de <strong>META Ads</strong> y <strong>SEO</strong> incrementa
+            significativamente el ROI:</p>
+        <ul>
+            <li><strong>Optimización de Hooks:</strong> Visuales diseñados para captar la atención en los primeros 3
+                segundos.</li>
+            <li><strong>Autoridad de Marca:</strong> Imágenes de alta calidad que generan confianza inmediata.</li>
+            <li><strong>Contenido Versátil:</strong> Material listo para anuncios, redes sociales y sitio web.</li>
+        </ul>
+
+        <div class="service-highlight">
+            <h2>Detalles del Servicio</h2>
+            <ul>
+                <li><strong>Sesión de Shoooting:</strong> 1 hora / 1.5 horas de producción en locación.</li>
+                <li><strong>Dirección de Arte:</strong> Por el equipo de GEM para asegurar alineación estratégica.</li>
+                <li><strong>Entregables:</strong> Selección de fotos con edición profesional de alta gama.</li>
+                <li><strong>Formato:</strong> Optimizado para anuncios (Ratio 4:5 y 9:16) y sitio web.</li>
+                <li><strong>Extras:</strong> Clips de video para Reels / TikTok incluidos según requerimiento.</li>
+            </ul>
+        </div>
+
+        <div class="price-box">
+            <p style="font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--muted);">Opciones
+                de Inversión</p>
+            <div class="price-amount" style="margin-bottom: 2rem;">$130.000</div>
+            <p style="font-weight: 600;">Tarifa por Sesión Completa (1.5 hs)</p>
+            <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem;">Incluye selección de fotos editadas
+                y clips de video.</p>
+
+            <div style="border-top: 1px solid var(--border); padding-top: 2rem;">
+                <p style="font-weight: 600; font-size: 1.25rem;">$9.000 <span
+                        style="font-size: 0.9rem; font-weight: 400; color: var(--muted);">por foto individual</span></p>
+                <p style="font-size: 0.85rem; color: var(--secondary); font-weight: 500;">Consultar precios especiales
+                    por cantidad.</p>
+            </div>
+        </div>
+
+        <h2>Pasos a Seguir</h2>
+        <p>1. <strong>Confirmación:</strong> Coordinamos fecha y locación para la sesión.<br>
+            2. <strong>Briefing:</strong> Definimos los objetivos visuales clave.<br>
+            3. <strong>Producción:</strong> Ejecución del shooting con dirección de GEM.<br>
+            4. <strong>Entrega:</strong> Recepción del material editado en 48-72hs hábiles.</p>
+
+        <div class="footer-note">
+            Propuesta válida por 15 días. Sujeta a disponibilidad de agenda.<br>
+            <strong>GEM Marketing Digital</strong> | <span style="color:var(--text)">Llevando tu marca al siguiente
+                nivel.</span>
+        </div>
+    </div>
+
+</body>
+
+</html>

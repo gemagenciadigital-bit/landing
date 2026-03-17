@@ -1,0 +1,19 @@
+Landing page for digital marketing agency "GEM" specializing in META Ads and SEO.
+
+Key Sections:
+1. Hero: Bold headline "Llevamos tu marca al siguiente nivel con META Ads y SEO". Subheadline: "Estrategias basadas en datos para escalar resultados y dominar el mercado digital." Primary CTA "Iniciat Tu Auditoría Gratuita".
+2. Founders/Identity: Brief section about the GEM approach - precision, scaling, and clarity.
+3. Service Focus - META Ads: Highlighting ROI optimization, scaling winning creative (0-3s hooks), and data-driven testing. 
+4. Service Focus - SEO: Highlighting technical audits, content authority, and organic growth that lasts.
+5. Proof/Social Proof: Placeholder for client logos and a success metric card (e.g., "758.78 Costo por Mensaje en campañas ganadoras").
+6. Final CTA Section: Reiteration of value with a WhatsApp link button.
+
+Visual Style:
+- Professional, premium, and modern aesthetic.
+- Dark theme option with vibrant GEM accents (blue/teal/vibrant gradients).
+- Glassmorphic card elements for service highlights.
+- High-quality typography (Inter/Outfit pairing).
+- High-impact visuals representing growth and data.
+
+Platform: Responsive Desktop (1440px)
+Language: Spanish

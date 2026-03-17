@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Cobertura Visual: Carnicería El Negro - Fiesta de la Manzana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0df2cc;
+            --secondary: #0ea5e9;
+            --bg: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            line-height: 1.5;
+            background: #f8fafc;
+            padding: 40px 20px;
+        }
+
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .page::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border-radius: 8px 8px 0 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2rem;
+            color: var(--text);
+            font-weight: 800;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .date {
+            text-align: right;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: var(--text);
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--text);
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+            list-style-position: inside;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .service-highlight {
+            background: #f1f5f9;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .price-box {
+            border: 2px solid var(--primary);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .price-amount {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-note {
+            margin-top: 60px;
+            font-size: 0.85rem;
+            color: var(--muted);
+            text-align: center;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .page {
+                box-shadow: none;
+                border: none;
+                padding: 40px;
+            }
+
+            .btn-print {
+                display: none;
+            }
+        }
+
+        .btn-print {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--text);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn-print" onclick="window.print()">Descargar PDF (Imprimir)</button>
+
+    <div class="page">
+        <header>
+            <div class="logo">GEM<span>.</span></div>
+            <div class="date">
+                Propuesta: Carnicería El Negro<br>
+                Fiesta Nacional de la Manzana 2026
+            </div>
+        </header>
+
+        <h1>Capturando la Excelencia de "Carnicería El Negro" en la Fiesta de la Manzana</h1>
+
+        <p>Estar presente en la <strong>Fiesta Nacional de la Manzana</strong> es un hito para cualquier negocio en
+            General Roca. Es el momento donde todo el esfuerzo se materializa en una experiencia única para sus
+            clientes.</p>
+
+        <p>Esta propuesta no es solo sobre "sacar fotos". Es sobre transformar el ambiente, la calidad de su carne y la
+            energía de su stand en <strong>activos digitales</strong> que le servirán para vender durante todo el año.
+        </p>
+
+        <h2>El Verdadero Valor de esta Cobertura</h2>
+        <ul>
+            <li><strong>Prueba Social Irrefutable:</strong> Nada vende más que mostrar su stand lleno de gente
+                disfrutando de sus productos en el evento más grande de la región.</li>
+            <li><strong>Contenido para Todo el Año:</strong> Con una sola sesión estratégica, tendrá material de alta
+                calidad para sus redes sociales y anuncios de los próximos meses.</li>
+            <li><strong>Diferenciación Visual:</strong> Mientras otros sacan fotos con el celular, su marca se destacará
+                con una estética de primer nivel que refleja la calidad real de "Carnicería El Negro".</li>
+        </ul>
+
+        <div class="service-highlight">
+            <h2>Detalles de la Cobertura en el Evento</h2>
+            <ul>
+                <li><strong>Shooting Estratégico:</strong> 1.5 horas de cobertura enfocada en momentos clave de la
+                    Fiesta.</li>
+                <li><strong>Enfoque de Producto:</strong> Capturas detalladas que resaltan la frescura y calidad de sus
+                    cortes.</li>
+                <li><strong>Vibe del Evento:</strong> Fotos del equipo en acción, interacción con clientes y el ambiente
+                    de la Manzana.</li>
+                <li><strong>Entrega Rápida:</strong> Selección de material editado profesionalmente listo para publicar.
+                </li>
+            </ul>
+        </div>
+
+        <div class="price-box">
+            <p style="font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--muted);">Inversión
+                Recomendada</p>
+            <div class="price-amount" style="margin-bottom: 2rem;">$130.000</div>
+            <p style="font-weight: 600;">Sesión Completa de Evento</p>
+            <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem;">Todo incluido: Cobertura, edición y
+                entrega digital.</p>
+
+            <div style="border-top: 1px solid var(--border); padding-top: 2rem;">
+                <p style="font-weight: 600; font-size: 1.25rem;">$9.000 <span
+                        style="font-size: 0.9rem; font-weight: 400; color: var(--muted);">por foto adicional</span></p>
+                <p style="font-size: 0.85rem; color: var(--secondary); font-weight: 500;">Opciones personalizadas por
+                    cantidad disponibles.</p>
+            </div>
+        </div>
+
+        <h2>Garantía GEM</h2>
+        <p>Nuestro equipo supervisará cada toma para asegurar que el contenido no solo sea "lindo", sino que esté
+            diseñado para atraer más clientes a su carnicería.</p>
+
+        <div class="footer-note">
+            Propuesta exclusiva para <strong>Carnicería El Negro</strong>.<br>
+            <strong>GEM Marketing Digital</strong> | General Roca, Río Negro.
+        </div>
+    </div>
+
+</body>
+
+</html>

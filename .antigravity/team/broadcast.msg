@@ -1,0 +1,7 @@
+{"de": "Ezebot", "tipo": "BROADCAST", "mensaje": "\u00a1Tarea completada! Landing optimizada con UX mobile, validaci\u00f3n, lazy loading y copy regional."}
+{"de": "Ezebot", "tipo": "BROADCAST", "mensaje": "Nueva directriz: Cambiar el tono a uno de confianza y cercan\u00eda (como un amigo experto). Seguridad sin formalismos excesivos ni modismos exagerados. Queremos una voz \u00fanica."}
+{"de": "Ezebot", "tipo": "BROADCAST", "mensaje": "\u00a1Redise\u00f1o de copy completado! Ahora la landing habla con un tono de 'amigo experto', cercano y honesto, diferenci\u00e1ndonos de la competencia corporativa."}
+{"de": "Ezebot", "tipo": "BROADCAST", "mensaje": "Eliminar la frase 'nos ponemos la camiseta'. Es un clich\u00e9 que resta autenticidad. Reemplazar por algo m\u00e1s honesto y directo sobre la responsabilidad compartida."}
+{"de": "Ezebot", "tipo": "BROADCAST", "mensaje": "Primera fase completada con \u00e9xito. El usuario quiere seguir mejorando la landing. Equipo: busquen el siguiente nivel de 'WOW'. Piensen en animaciones, contenido din\u00e1mico o interacciones premium."}
+{"de": "Ezebot", "tipo": "BROADCAST", "mensaje": "\u00a1Aprobaci\u00f3n total! Procediendo con Micro-interacciones, FAQs Honestas y Accesibilidad Premium. Vamos a hacer esta landing \u00fanica."}
+{"de": "Ezebot", "tipo": "BROADCAST", "mensaje": "\u00a1Siguiente nivel alcanzado! Agregamos Glow Cursor, contadores din\u00e1micos, FAQs honestas y feedback de formulario. La landing es premium y \u00fanica."}

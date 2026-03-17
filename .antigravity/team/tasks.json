@@ -1,0 +1,74 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Analizar landing",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Equipo",
+      "dependencies": []
+    },
+    {
+      "id": 2,
+      "title": "Lazy loading y performance",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Arquitecto",
+      "dependencies": []
+    },
+    {
+      "id": 3,
+      "title": "Localizaci\u00f3n Alto Valle",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Marketer",
+      "dependencies": []
+    },
+    {
+      "id": 4,
+      "title": "Mobile UX e Interacci\u00f3n",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Revisor",
+      "dependencies": []
+    },
+    {
+      "id": 5,
+      "title": "Redefinir Copy: Tono Amistoso-Experto",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Marketer",
+      "dependencies": []
+    },
+    {
+      "id": 6,
+      "title": "Glow Cursor y Contadores",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Arquitecto",
+      "dependencies": []
+    },
+    {
+      "id": 7,
+      "title": "FAQs Charlemos un toque",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Marketer",
+      "dependencies": []
+    },
+    {
+      "id": 8,
+      "title": "Accesibilidad y Feedback Form",
+      "status": "COMPLETED",
+      "plan_approved": false,
+      "assigned_to": "Revisor",
+      "dependencies": []
+    }
+  ],
+  "members": [
+    "Ezebot",
+    "Arquitecto",
+    "Marketer",
+    "Devil's Advocate"
+  ]
+}
