@@ -5,3 +5,4 @@
 {"de": "Ezebot", "tipo": "BROADCAST", "mensaje": "Primera fase completada con \u00e9xito. El usuario quiere seguir mejorando la landing. Equipo: busquen el siguiente nivel de 'WOW'. Piensen en animaciones, contenido din\u00e1mico o interacciones premium."}
 {"de": "Ezebot", "tipo": "BROADCAST", "mensaje": "\u00a1Aprobaci\u00f3n total! Procediendo con Micro-interacciones, FAQs Honestas y Accesibilidad Premium. Vamos a hacer esta landing \u00fanica."}
 {"de": "Ezebot", "tipo": "BROADCAST", "mensaje": "\u00a1Siguiente nivel alcanzado! Agregamos Glow Cursor, contadores din\u00e1micos, FAQs honestas y feedback de formulario. La landing es premium y \u00fanica."}
+{"de": "Ezebot", "tipo": "BROADCAST", "mensaje": "Nueva tarea: Renovar las im\u00e1genes de la secci\u00f3n 'C\u00f3mo trabajamos codo a codo con vos'. No deben repetirse con las de servicios. Buscando assets que transmitan colaboraci\u00f3n y cercan\u00eda real."}

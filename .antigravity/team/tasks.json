@@ -63,6 +63,14 @@
       "plan_approved": false,
       "assigned_to": "Revisor",
       "dependencies": []
+    },
+    {
+      "id": 9,
+      "title": "Renovar im\u00e1genes de colaboraci\u00f3n",
+      "status": "PENDING",
+      "plan_approved": false,
+      "assigned_to": "Marketer",
+      "dependencies": []
     }
   ],
   "members": [
