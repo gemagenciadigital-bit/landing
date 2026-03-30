@@ -808,6 +808,8 @@
                 let mouseX = 0;
                 let mouseY = 0;
                 let isMobile = window.innerWidth < 768;
+                let canvasWidth = window.innerWidth;
+                let canvasHeight = window.innerHeight;
 
                 // Only track mouse on desktop
                 if (!isMobile) {
@@ -818,33 +820,47 @@
                 }
 
                 const resizeCanvas = () => {
-                    canvas.width = window.innerWidth;
-                    canvas.height = window.innerHeight;
-                    isMobile = window.innerWidth < 768;
+                    const newWidth = window.innerWidth;
+                    const newHeight = window.innerHeight;
+                    const widthDiff = Math.abs(newWidth - canvasWidth);
+                    const heightDiff = Math.abs(newHeight - canvasHeight);
+                    const isMobileDevice = window.innerWidth < 768;
+
+                    // En versión mobile, el hide/show de la barra de direcciones al hacer scroll provoca un gran salto en el 'innerHeight' (trigger de resize).
+                    // Para evitar que las partículas desaparezcan y reinicien (que su movimiento dependa del scroll), sólo triggereamos si cambia el ancho (Landscape/Portrait)
+                    const shouldResize = isMobileDevice ? (widthDiff > 50) : (widthDiff > 50 || heightDiff > 150);
+
+                    if (shouldResize) {
+                        canvasWidth = newWidth;
+                        canvasHeight = newHeight;
+                        canvas.width = canvasWidth;
+                        canvas.height = canvasHeight;
+                        isMobile = isMobileDevice;
+                        createParticles();
+                    }
                 };
 
                 const createParticles = () => {
                     particles = [];
-                    // Less particles on mobile for better performance
+                    // Incrementamos la cantidad de partículas para la versión móvil (~2x más que antes)
                     const particleCount = isMobile
-                        ? Math.floor((canvas.width * canvas.height) / 15000)
-                        : Math.floor((canvas.width * canvas.height) / 5000);
+                        ? Math.floor((canvasWidth * canvasHeight) / 3500)
+                        : Math.floor((canvasWidth * canvasHeight) / 5000);
 
                     for (let i = 0; i < particleCount; i++) {
-                        const speed = isMobile ? 0.25 : 0.8;
                         particles.push({
-                            x: Math.random() * canvas.width,
-                            y: Math.random() * canvas.height,
-                            vx: (Math.random() - 0.5) * speed,
-                            vy: (Math.random() - 0.5) * speed,
-                            radius: isMobile ? Math.random() * 2.5 + 1.5 : Math.random() * 4 + 2,
-                            opacity: Math.random() * 0.4 + 0.3
+                            x: Math.random() * canvasWidth,
+                            y: Math.random() * canvasHeight,
+                            vx: (Math.random() - 0.5) * (isMobile ? 0.2 : 0.8),
+                            vy: (Math.random() - 0.5) * (isMobile ? 0.2 : 0.8),
+                            radius: isMobile ? Math.random() * 3.5 + 2 : Math.random() * 4 + 2,
+                            opacity: isMobile ? Math.random() * 0.7 + 0.5 : Math.random() * 0.4 + 0.3
                         });
                     }
                 };
 
                 const drawParticles = () => {
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 
                     particles.forEach((p, i) => {
                         // Update position
@@ -863,33 +879,39 @@
                         }
 
                         // Wrap around edges
-                        if (p.x < 0) p.x = canvas.width;
-                        if (p.x > canvas.width) p.x = 0;
-                        if (p.y < 0) p.y = canvas.height;
-                        if (p.y > canvas.height) p.y = 0;
+                        if (p.x < 0) p.x = canvasWidth;
+                        if (p.x > canvasWidth) p.x = 0;
+                        if (p.y < 0) p.y = canvasHeight;
+                        if (p.y > canvasHeight) p.y = 0;
 
-                        // Draw particle with glow
+                        // Draw particle with glow - MORE VISIBLE ON MOBILE
                         ctx.beginPath();
                         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
                         ctx.fillStyle = `rgba(255, 255, 255, ${p.opacity})`;
-                        ctx.shadowBlur = isMobile ? 8 : 15;
-                        ctx.shadowColor = 'rgba(13, 242, 204, 0.6)';
+                        ctx.shadowBlur = isMobile ? 12 : 15;
+                        ctx.shadowColor = 'rgba(13, 242, 204, 0.9)';
                         ctx.fill();
                         ctx.shadowBlur = 0;
 
-                        // Draw connections
+                        // Draw connections - MORE VISIBLE ON MOBILE
                         particles.slice(i + 1).forEach(p2 => {
                             const dx = p.x - p2.x;
                             const dy = p.y - p2.y;
                             const distance = Math.sqrt(dx * dx + dy * dy);
 
-                            const maxDistance = isMobile ? 120 : 180;
+                            // Expandimos ligeramente el rastro máximo en móvil
+                            const maxDistance = isMobile ? 130 : 180;
                             if (distance < maxDistance) {
                                 ctx.beginPath();
                                 ctx.moveTo(p.x, p.y);
                                 ctx.lineTo(p2.x, p2.y);
-                                ctx.strokeStyle = `rgba(13, 242, 204, ${0.35 * (1 - distance / maxDistance)})`;
-                                ctx.lineWidth = 0.5;
+                                // Incrementamos la opacidad de los hilos de conexión
+                                const lineOpacity = isMobile 
+                                    ? 0.7 * (1 - distance / maxDistance) 
+                                    : 0.35 * (1 - distance / maxDistance);
+                                ctx.strokeStyle = `rgba(13, 242, 204, ${lineOpacity})`;
+                                // Incrementamos el grosor de línea para móvil
+                                ctx.lineWidth = isMobile ? 1.5 : 0.5;
                                 ctx.stroke();
                             }
                         });
@@ -898,13 +920,17 @@
                     animationId = requestAnimationFrame(drawParticles);
                 };
 
-                resizeCanvas();
+                // Initial setup
+                canvas.width = canvasWidth;
+                canvas.height = canvasHeight;
                 createParticles();
                 drawParticles();
 
+                // Only listen for actual resize (orientation change)
+                let resizeTimeout;
                 window.addEventListener('resize', () => {
-                    resizeCanvas();
-                    createParticles();
+                    clearTimeout(resizeTimeout);
+                    resizeTimeout = setTimeout(resizeCanvas, 250);
                 });
             }
         });
