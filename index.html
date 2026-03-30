@@ -807,30 +807,38 @@
                 let animationId;
                 let mouseX = 0;
                 let mouseY = 0;
+                let isMobile = window.innerWidth < 768;
 
-                // Track mouse for interaction
-                document.addEventListener('mousemove', (e) => {
-                    mouseX = e.clientX;
-                    mouseY = e.clientY;
-                });
+                // Only track mouse on desktop
+                if (!isMobile) {
+                    document.addEventListener('mousemove', (e) => {
+                        mouseX = e.clientX;
+                        mouseY = e.clientY;
+                    });
+                }
 
                 const resizeCanvas = () => {
                     canvas.width = window.innerWidth;
                     canvas.height = window.innerHeight;
+                    isMobile = window.innerWidth < 768;
                 };
 
                 const createParticles = () => {
                     particles = [];
-                    const particleCount = Math.floor((canvas.width * canvas.height) / 5000);
+                    // Less particles on mobile for better performance
+                    const particleCount = isMobile
+                        ? Math.floor((canvas.width * canvas.height) / 15000)
+                        : Math.floor((canvas.width * canvas.height) / 5000);
+
                     for (let i = 0; i < particleCount; i++) {
+                        const speed = isMobile ? 0.25 : 0.8;
                         particles.push({
                             x: Math.random() * canvas.width,
                             y: Math.random() * canvas.height,
-                            vx: (Math.random() - 0.5) * 0.8,
-                            vy: (Math.random() - 0.5) * 0.8,
-                            radius: Math.random() * 4 + 2,
-                            baseOpacity: Math.random() * 0.3 + 0.5,
-                            opacity: Math.random() * 0.3 + 0.5
+                            vx: (Math.random() - 0.5) * speed,
+                            vy: (Math.random() - 0.5) * speed,
+                            radius: isMobile ? Math.random() * 2.5 + 1.5 : Math.random() * 4 + 2,
+                            opacity: Math.random() * 0.4 + 0.3
                         });
                     }
                 };
@@ -843,13 +851,15 @@
                         p.x += p.vx;
                         p.y += p.vy;
 
-                        // Mouse interaction - particles move away from cursor
-                        const dxMouse = p.x - mouseX;
-                        const dyMouse = p.y - mouseY;
-                        const distMouse = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
-                        if (distMouse < 150) {
-                            p.x += dxMouse * 0.02;
-                            p.y += dyMouse * 0.02;
+                        // Mouse interaction only on desktop
+                        if (!isMobile) {
+                            const dxMouse = p.x - mouseX;
+                            const dyMouse = p.y - mouseY;
+                            const distMouse = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
+                            if (distMouse < 150) {
+                                p.x += dxMouse * 0.02;
+                                p.y += dyMouse * 0.02;
+                            }
                         }
 
                         // Wrap around edges
@@ -858,12 +868,12 @@
                         if (p.y < 0) p.y = canvas.height;
                         if (p.y > canvas.height) p.y = 0;
 
-                        // Draw particle with glow - WHITE/CYAN color
+                        // Draw particle with glow
                         ctx.beginPath();
                         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
                         ctx.fillStyle = `rgba(255, 255, 255, ${p.opacity})`;
-                        ctx.shadowBlur = 15;
-                        ctx.shadowColor = 'rgba(13, 242, 204, 0.8)';
+                        ctx.shadowBlur = isMobile ? 8 : 15;
+                        ctx.shadowColor = 'rgba(13, 242, 204, 0.6)';
                         ctx.fill();
                         ctx.shadowBlur = 0;
 
@@ -873,12 +883,13 @@
                             const dy = p.y - p2.y;
                             const distance = Math.sqrt(dx * dx + dy * dy);
 
-                            if (distance < 180) {
+                            const maxDistance = isMobile ? 120 : 180;
+                            if (distance < maxDistance) {
                                 ctx.beginPath();
                                 ctx.moveTo(p.x, p.y);
                                 ctx.lineTo(p2.x, p2.y);
-                                ctx.strokeStyle = `rgba(13, 242, 204, ${0.4 * (1 - distance / 180)})`;
-                                ctx.lineWidth = 1;
+                                ctx.strokeStyle = `rgba(13, 242, 204, ${0.35 * (1 - distance / maxDistance)})`;
+                                ctx.lineWidth = 0.5;
                                 ctx.stroke();
                             }
                         });
