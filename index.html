@@ -255,12 +255,12 @@
     </script>
 </head>
 
-<body
-    class="bg-black text-slate-200 antialiased selection:bg-primary selection:text-black">
+<body class="bg-black text-slate-200 antialiased selection:bg-primary selection:text-black">
     <div id="cursor-glow"></div>
 
     <!-- Site-wide Background -->
-    <div class="fixed inset-0 pointer-events-none" style="z-index: -2; background: radial-gradient(ellipse at 50% 50%, #1a1a2e 0%, #0a0a0f 100%);"></div>
+    <div class="fixed inset-0 pointer-events-none"
+        style="z-index: -2; background: radial-gradient(ellipse at 50% 50%, #1a1a2e 0%, #0a0a0f 100%);"></div>
     <!-- Site-wide Particles Canvas -->
     <canvas id="particles-canvas" class="fixed inset-0 pointer-events-none" style="z-index: -1;"></canvas>
 
@@ -299,31 +299,40 @@
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-black/95 backdrop-blur-xl border-t border-white/5 absolute w-full left-0 top-16 shadow-2xl overflow-hidden transition-all duration-500">
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-black/95 backdrop-blur-xl border-t border-white/5 absolute w-full left-0 top-16 shadow-2xl overflow-hidden transition-all duration-500">
             <div class="px-6 pt-2 pb-6 space-y-1">
-                <a href="#servicios" class="block text-gray-400 hover:text-white px-3 py-4 text-base font-medium border-b border-white/5">Servicios</a>
-                <a href="#proceso" class="block text-gray-400 hover:text-white px-3 py-4 text-base font-medium border-b border-white/5">Estrategia</a>
-                <a href="#resultados" class="block text-gray-400 hover:text-white px-3 py-4 text-base font-medium border-b border-white/5">Resultados</a>
+                <a href="#servicios"
+                    class="block text-gray-400 hover:text-white px-3 py-4 text-base font-medium border-b border-white/5">Servicios</a>
+                <a href="#proceso"
+                    class="block text-gray-400 hover:text-white px-3 py-4 text-base font-medium border-b border-white/5">Estrategia</a>
+                <a href="#resultados"
+                    class="block text-gray-400 hover:text-white px-3 py-4 text-base font-medium border-b border-white/5">Resultados</a>
                 <div class="pt-4">
-                    <a href="#contacto" class="block w-full text-center bg-white text-black py-3 rounded-full font-semibold">Empezar</a>
+                    <a href="#contacto"
+                        class="block w-full text-center bg-white text-black py-3 rounded-full font-semibold">Empezar</a>
                 </div>
             </div>
         </div>
     </nav>
     <section class="relative min-h-screen flex items-center pt-16 overflow-hidden">
         <!-- Radial gradient for text contrast -->
-        <div class="absolute inset-0 pointer-events-none z-[1]" style="background: radial-gradient(ellipse 80% 60% at 50% 45%, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);"></div>
+        <div class="absolute inset-0 pointer-events-none z-[1]"
+            style="background: radial-gradient(ellipse 80% 60% at 50% 45%, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);">
+        </div>
         <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center pt-8">
             <div
                 class="hero-title inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm">
                 <span class="text-sm font-medium tracking-wide text-primary">Agencia de Marketing Digital</span>
             </div>
-            <h1 class="hero-title text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white tracking-tight mb-6 leading-[1.1]">
+            <h1
+                class="hero-title text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white tracking-tight mb-6 leading-[1.1]">
                 Conectando tu negocio<br class="hidden md:block" />
                 <span class="text-gradient">con el cliente ideal.</span>
             </h1>
             <p class="hero-subtitle mt-4 max-w-xl mx-auto text-lg text-gray-300 font-light leading-relaxed">
-                Estrategias digitales diseñadas para que tu marca aparezca exactamente donde tus clientes están buscando.
+                Estrategias digitales diseñadas para que tu marca aparezca exactamente donde tus clientes están
+                buscando.
                 <span class="text-white font-medium">Sin fricciones, solo resultados.</span>
             </p>
             <div class="hero-buttons mt-10 flex flex-col sm:flex-row justify-center gap-4">
@@ -367,15 +376,13 @@
                 <p class="text-gray-500 max-w-lg mx-auto text-lg">Estrategias probadas para hacer crecer tu negocio.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div
-                    class="glass-card rounded-2xl overflow-hidden group relative reveal">
+                <div class="glass-card rounded-2xl overflow-hidden group relative reveal">
                     <div class="h-48 w-full relative overflow-hidden">
                         <img alt="META Ads"
                             class="w-full h-full object-cover brightness-50 group-hover:scale-105 group-hover:brightness-75 transition-all duration-700"
                             loading="lazy"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHUFLpb87mgD1Z5BC8aE6tbIudkn1iQgxGRHwZXAmzMMAfg_ZY3j_0IhyQccMK4sFtMU2Fk8wBAt5hrUS55PrSYTbiSWtHwKo6oyc2oZmh83lQKFUkbFBpFtCpWhxGwMAgdiBtZt7NLnV7_WaBHErFyVj-nQvbzHUdfBaOyW5Vpwg1-8yQJcPwO8E43aBgo5x4IXLRgWwiSLA5h3-A0WMCwJRdkLr2GghTn5r-Shzi3nQ-nx02z0Ybwg1GlXftAJ8uF1IUlf1UXhoM" />
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent">
                         </div>
                     </div>
                     <div class="p-6">
@@ -389,15 +396,13 @@
                         </a>
                     </div>
                 </div>
-                <div
-                    class="glass-card rounded-2xl overflow-hidden group relative reveal">
+                <div class="glass-card rounded-2xl overflow-hidden group relative reveal">
                     <div class="h-48 w-full relative overflow-hidden">
                         <img alt="SEO"
                             class="w-full h-full object-cover brightness-50 group-hover:scale-105 group-hover:brightness-75 transition-all duration-700"
                             loading="lazy"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbhX8IneCeOKrEXlNpyK3PJEQ9t7Mvw4l-Mdfg1IHEGz6hzmXGSYG38exxfevRIJoAy-smWwuGvU5NuOJ_2BceOedrINj0ESxF_DlZdo-QNpnCh-KfQuuDndTZn5J9zW6zqqeSjTzbSW_K_29k2kNEQuhmCcuQKkYJ7tW5B-JeFbrKhMUyixvqQGKC9k2UJIBD858w0HcjAmP0-fCvjPm0r7LZKSKUTegJKfj9tACL_nzsQBmBXSR8BD8gE8kLT8hImHN5_vtyYXwe" />
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent">
                         </div>
                     </div>
                     <div class="p-6">
@@ -411,15 +416,13 @@
                         </a>
                     </div>
                 </div>
-                <div
-                    class="glass-card rounded-2xl overflow-hidden group relative reveal">
+                <div class="glass-card rounded-2xl overflow-hidden group relative reveal">
                     <div class="h-48 w-full relative overflow-hidden">
                         <img alt="Producción Visual"
                             class="w-full h-full object-cover brightness-50 group-hover:scale-105 group-hover:brightness-75 transition-all duration-700"
                             loading="lazy"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpg-kyjc-e6bRO9lCvQSNHnJO8nliVVBLxABH7unypvQ-HwCoLX96rTySCKCAfBj_1HIafnngLJM82Y2xgaTst_KGOrrGuVipWGiOPUe36r6XA77vS-bn3vrLuUonfPOeHIra8dlxDjFCvahjsKDxu15UN7peOWfX4WoVZHLXUVRBhUoXnkkELngwjDfOIFpGBJRvdCmTIuGHbhpaviNahS6n2dtsACRJ0qknbxa6Utim9K2qRaKbCunHOGZtJbcIiKh7HV1DrmvAo" />
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent">
                         </div>
                     </div>
                     <div class="p-6">
@@ -433,15 +436,13 @@
                         </a>
                     </div>
                 </div>
-                <div
-                    class="glass-card rounded-2xl overflow-hidden group relative reveal">
+                <div class="glass-card rounded-2xl overflow-hidden group relative reveal">
                     <div class="h-48 w-full relative overflow-hidden">
                         <img alt="Sitios Web"
                             class="w-full h-full object-cover brightness-50 group-hover:scale-105 group-hover:brightness-75 transition-all duration-700"
                             loading="lazy"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFD40ohuYegqS8lst_72Vok1KbdTVsb7fTWfOO1gvgPAPpDLoct_qY-myBAAS6v1NpnteZqRwb68tJD_aSRADCWRsTvkZ-eCbhd6jtlkXQlmqd2-l5CZs6lH4BDdHphhR6_FkW54xHnu6tAYdG9GV6EZMa7YH4ZMdHAvd5LPlnShJ062Jta8KFn5IAnj2n25HZnpXCNC7xM8jp3ZmkFtkGSpMO5G6g8u6OCiKkfRCk10mg9JcVoh32b0jAajh0oQlDVo64Cddw5Gvn" />
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent">
                         </div>
                     </div>
                     <div class="p-6">
@@ -465,9 +466,11 @@
                     <div
                         class="inline-block px-4 py-1.5 rounded-full border border-white/10 text-gray-400 text-xs font-semibold uppercase tracking-widest mb-8">
                         Nuestra Metodología</div>
-                    <h2 class="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight tracking-tight">Cómo trabajamos<br />con vos</h2>
+                    <h2 class="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight tracking-tight">Cómo
+                        trabajamos<br />con vos</h2>
                     <p class="text-gray-500 text-lg mb-12 leading-relaxed">
-                        Trabajamos a la par tuya. Escuchamos tus objetivos y transformamos cada consulta en un plan de acción real, con comunicación constante y directa.
+                        Trabajamos a la par tuya. Escuchamos tus objetivos y transformamos cada consulta en un plan de
+                        acción real, con comunicación constante y directa.
                     </p>
                     <div class="space-y-8">
                         <div class="flex gap-4">
@@ -494,27 +497,28 @@
                 </div>
                 <div class="w-full lg:w-1/2 grid grid-cols-2 gap-4">
                     <div class="space-y-4 pt-12">
-                        <div class="rounded-2xl overflow-hidden border border-white/5 hover:border-white/10 transition-all duration-500">
+                        <div
+                            class="rounded-2xl overflow-hidden border border-white/5 hover:border-white/10 transition-all duration-500">
                             <img alt="Equipo GEM colaborando"
                                 class="w-full aspect-[4/5] object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700"
-                                loading="lazy"
-                                src="./assets/images/colaboracion_1.png" />
+                                loading="lazy" src="./assets/images/colaboracion_1.png" />
                         </div>
-                        <div class="rounded-2xl overflow-hidden border border-white/5 hover:border-white/10 transition-all duration-500">
+                        <div
+                            class="rounded-2xl overflow-hidden border border-white/5 hover:border-white/10 transition-all duration-500">
                             <img alt="Planificación estratégica"
                                 class="w-full aspect-square object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700"
-                                loading="lazy"
-                                src="./assets/images/workspace_2.png" />
+                                loading="lazy" src="./assets/images/workspace_2.png" />
                         </div>
                     </div>
                     <div class="space-y-4">
-                        <div class="rounded-2xl overflow-hidden border border-white/5 hover:border-white/10 transition-all duration-500">
+                        <div
+                            class="rounded-2xl overflow-hidden border border-white/5 hover:border-white/10 transition-all duration-500">
                             <img alt="Producción visual"
                                 class="w-full aspect-square object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700"
-                                loading="lazy"
-                                src="./assets/images/produccion_3.png" />
+                                loading="lazy" src="./assets/images/produccion_3.png" />
                         </div>
-                        <div class="rounded-2xl overflow-hidden border border-white/5 hover:border-white/10 transition-all duration-500">
+                        <div
+                            class="rounded-2xl overflow-hidden border border-white/5 hover:border-white/10 transition-all duration-500">
                             <img alt="Studio"
                                 class="w-full aspect-[4/5] object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700"
                                 loading="lazy"
@@ -526,20 +530,24 @@
         </div>
     </section>
     <section class="py-32 relative overflow-hidden bg-black/80 backdrop-blur-sm" id="resultados">
-        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/80 pointer-events-none z-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/80 pointer-events-none z-0">
+        </div>
         <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-20 items-center">
                 <div>
                     <h2 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">Resultados reales</h2>
                     <p class="text-gray-500 text-lg mb-10 leading-relaxed">
-                        Resultados basados en datos. Implementamos métricas claras para que veas el impacto real de nuestras estrategias en tu facturación.
+                        Resultados basados en datos. Implementamos métricas claras para que veas el impacto real de
+                        nuestras estrategias en tu facturación.
                     </p>
                     <div class="grid grid-cols-2 gap-6">
-                        <div class="p-8 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/20 transition-all duration-500">
+                        <div
+                            class="p-8 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/20 transition-all duration-500">
                             <div class="text-5xl font-bold text-primary mb-2 counter" data-target="300">+0%</div>
                             <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">ROI Promedio</div>
                         </div>
-                        <div class="p-8 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/20 transition-all duration-500">
+                        <div
+                            class="p-8 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/20 transition-all duration-500">
                             <div class="text-5xl font-bold text-white mb-2 counter" data-target="40">-0%</div>
                             <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Costo por Lead</div>
                         </div>
@@ -555,11 +563,21 @@
                             <div class="text-primary text-sm font-semibold">+124.5%</div>
                         </div>
                         <div class="h-48 w-full flex items-end justify-between space-x-2">
-                            <div class="w-1/6 bg-white/5 rounded-t h-[30%] hover:bg-primary/30 transition-colors cursor-pointer"></div>
-                            <div class="w-1/6 bg-white/5 rounded-t h-[45%] hover:bg-primary/40 transition-colors cursor-pointer"></div>
-                            <div class="w-1/6 bg-white/5 rounded-t h-[40%] hover:bg-primary/50 transition-colors cursor-pointer"></div>
-                            <div class="w-1/6 bg-white/5 rounded-t h-[65%] hover:bg-primary/60 transition-colors cursor-pointer"></div>
-                            <div class="w-1/6 bg-white/5 rounded-t h-[85%] hover:bg-primary/70 transition-colors cursor-pointer"></div>
+                            <div
+                                class="w-1/6 bg-white/5 rounded-t h-[30%] hover:bg-primary/30 transition-colors cursor-pointer">
+                            </div>
+                            <div
+                                class="w-1/6 bg-white/5 rounded-t h-[45%] hover:bg-primary/40 transition-colors cursor-pointer">
+                            </div>
+                            <div
+                                class="w-1/6 bg-white/5 rounded-t h-[40%] hover:bg-primary/50 transition-colors cursor-pointer">
+                            </div>
+                            <div
+                                class="w-1/6 bg-white/5 rounded-t h-[65%] hover:bg-primary/60 transition-colors cursor-pointer">
+                            </div>
+                            <div
+                                class="w-1/6 bg-white/5 rounded-t h-[85%] hover:bg-primary/70 transition-colors cursor-pointer">
+                            </div>
                             <div class="w-1/6 bg-primary rounded-t h-[100%]"></div>
                         </div>
                         <div class="mt-4 flex justify-between text-xs text-gray-600 font-mono">
@@ -581,31 +599,40 @@
                 <p class="text-gray-500">Las respuestas que necesitás escuchar.</p>
             </div>
             <div class="space-y-3">
-                <details class="group rounded-2xl p-6 cursor-pointer transition-all duration-500 bg-white/[0.02] border border-white/5 hover:border-white/10">
+                <details
+                    class="group rounded-2xl p-6 cursor-pointer transition-all duration-500 bg-white/[0.02] border border-white/5 hover:border-white/10">
                     <summary class="flex justify-between items-center font-semibold text-white list-none">
                         <span>¿Cuánto tengo que invertir para ver resultados?</span>
-                        <span class="material-icons text-gray-600 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+                        <span
+                            class="material-icons text-gray-600 group-open:rotate-180 transition-transform duration-300">expand_more</span>
                     </summary>
                     <p class="mt-4 text-gray-500 text-sm leading-relaxed">
-                        No hay un número mágico, pero siempre recomendamos empezar con algo que te permita testear sin que te quite el sueño. Charlamos tu caso y armamos un plan real.
+                        No hay un número mágico, pero siempre recomendamos empezar con algo que te permita testear sin
+                        que te quite el sueño. Charlamos tu caso y armamos un plan real.
                     </p>
                 </details>
-                <details class="group rounded-2xl p-6 cursor-pointer transition-all duration-500 bg-white/[0.02] border border-white/5 hover:border-white/10">
+                <details
+                    class="group rounded-2xl p-6 cursor-pointer transition-all duration-500 bg-white/[0.02] border border-white/5 hover:border-white/10">
                     <summary class="flex justify-between items-center font-semibold text-white list-none">
                         <span>¿Por qué elegirte y no hacerlo yo solo?</span>
-                        <span class="material-icons text-gray-600 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+                        <span
+                            class="material-icons text-gray-600 group-open:rotate-180 transition-transform duration-300">expand_more</span>
                     </summary>
                     <p class="mt-4 text-gray-500 text-sm leading-relaxed">
-                        Podés hacerlo, pero probablemente gastes dinero probando cosas que ya sabemos que no funcionan. Vos ocupate de tu negocio, nosotros nos encargamos de que te encuentren.
+                        Podés hacerlo, pero probablemente gastes dinero probando cosas que ya sabemos que no funcionan.
+                        Vos ocupate de tu negocio, nosotros nos encargamos de que te encuentren.
                     </p>
                 </details>
-                <details class="group rounded-2xl p-6 cursor-pointer transition-all duration-500 bg-white/[0.02] border border-white/5 hover:border-white/10">
+                <details
+                    class="group rounded-2xl p-6 cursor-pointer transition-all duration-500 bg-white/[0.02] border border-white/5 hover:border-white/10">
                     <summary class="flex justify-between items-center font-semibold text-white list-none">
                         <span>¿En cuánto tiempo voy a vender más?</span>
-                        <span class="material-icons text-gray-600 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+                        <span
+                            class="material-icons text-gray-600 group-open:rotate-180 transition-transform duration-300">expand_more</span>
                     </summary>
                     <p class="mt-4 text-gray-500 text-sm leading-relaxed">
-                        Las primeras semanas son de ajuste. Al primer mes ya deberías notar más movimiento. A los 90 días, el cambio es notable.
+                        Las primeras semanas son de ajuste. Al primer mes ya deberías notar más movimiento. A los 90
+                        días, el cambio es notable.
                     </p>
                 </details>
             </div>
@@ -617,67 +644,66 @@
                 <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Empecemos</h2>
                 <p class="text-gray-500">Contanos qué tenés en mente. Sin presión, solo una charla honesta.</p>
             </div>
-                <form class="space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="relative group">
-                            <input
-                                class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors invalid:border-red-500"
-                                id="name" placeholder=" " required="" type="text" />
-                            <label
-                                class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-invalid:text-red-500"
-                                for="name">Nombre Completo</label>
-                        </div>
-                        <div class="relative group">
-                            <input
-                                class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors invalid:border-red-500"
-                                id="email" placeholder=" " required="" type="email" />
-                            <label
-                                class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-invalid:text-red-500"
-                                for="email">Correo Electrónico</label>
-                        </div>
-                    </div>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="relative group">
-                            <input
-                                class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors"
-                                id="website" placeholder=" " type="url" />
-                            <label
-                                class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                                for="website">Sitio Web (Opcional)</label>
-                        </div>
-                        <div class="relative group">
-                            <select
-                                class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors"
-                                id="service">
-                                <option class="text-black" disabled="" selected="" value="">Servicio de Interés</option>
-                                <option class="text-black" value="meta">META Ads</option>
-                                <option class="text-black" value="seo">SEO Técnico</option>
-                                <option class="text-black" value="web">Sitios Web</option>
-                                <option class="text-black" value="visual">Producción Visual</option>
-                                <option class="text-black" value="both">Estrategia Integral</option>
-                            </select>
-                            <label class="sr-only" for="service">Servicio</label>
-                        </div>
-                    </div>
-                    <div class="relative group pt-4">
-                        <textarea
-                            class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors resize-none"
-                            id="message" placeholder=" " rows="3"></textarea>
+            <form class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="relative group">
+                        <input
+                            class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors invalid:border-red-500"
+                            id="name" placeholder=" " required="" type="text" />
                         <label
-                            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-7 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                            for="message">Cuéntanos sobre tus objetivos</label>
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-invalid:text-red-500"
+                            for="name">Nombre Completo</label>
                     </div>
-                    <div class="pt-8 text-center">
-                        <button
-                            id="submit-button"
-                            class="btn-premium w-full md:w-auto bg-white text-black font-semibold py-4 px-12 rounded-full text-lg transition-all duration-500 hover:bg-gray-200"
-                            type="submit">
-                            <span id="button-text">Enviar mensaje</span>
-                            <span id="button-loader" class="hidden animate-spin material-icons">sync</span>
-                        </button>
+                    <div class="relative group">
+                        <input
+                            class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors invalid:border-red-500"
+                            id="email" placeholder=" " required="" type="email" />
+                        <label
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-invalid:text-red-500"
+                            for="email">Correo Electrónico</label>
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="relative group">
+                        <input
+                            class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors"
+                            id="website" placeholder=" " type="url" />
+                        <label
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                            for="website">Sitio Web (Opcional)</label>
+                    </div>
+                    <div class="relative group">
+                        <select
+                            class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors"
+                            id="service">
+                            <option class="text-black" disabled="" selected="" value="">Servicio de Interés</option>
+                            <option class="text-black" value="meta">META Ads</option>
+                            <option class="text-black" value="seo">SEO Técnico</option>
+                            <option class="text-black" value="web">Sitios Web</option>
+                            <option class="text-black" value="visual">Producción Visual</option>
+                            <option class="text-black" value="both">Estrategia Integral</option>
+                        </select>
+                        <label class="sr-only" for="service">Servicio</label>
+                    </div>
+                </div>
+                <div class="relative group pt-4">
+                    <textarea
+                        class="block py-4 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-700 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer transition-colors resize-none"
+                        id="message" placeholder=" " rows="3"></textarea>
+                    <label
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-7 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        for="message">Cuéntanos sobre tus objetivos</label>
+                </div>
+                <div class="pt-8 text-center">
+                    <button id="submit-button"
+                        class="btn-premium w-full md:w-auto bg-white text-black font-semibold py-4 px-12 rounded-full text-lg transition-all duration-500 hover:bg-gray-200"
+                        type="submit">
+                        <span id="button-text">Enviar mensaje</span>
+                        <span id="button-loader" class="hidden animate-spin material-icons">sync</span>
+                    </button>
+                </div>
+            </form>
+        </div>
         </div>
     </section>
     <footer class="bg-black/90 backdrop-blur-md border-t border-white/5 pt-20 pb-12">
@@ -908,8 +934,8 @@
                                 ctx.moveTo(p.x, p.y);
                                 ctx.lineTo(p2.x, p2.y);
                                 // Incrementamos la opacidad de los hilos de conexión
-                                const lineOpacity = isMobile 
-                                    ? 0.7 * (1 - distance / maxDistance) 
+                                const lineOpacity = isMobile
+                                    ? 0.7 * (1 - distance / maxDistance)
                                     : 0.35 * (1 - distance / maxDistance);
                                 ctx.strokeStyle = `rgba(13, 242, 204, ${lineOpacity})`;
                                 // Incrementamos el grosor de línea para móvil
